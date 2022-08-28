@@ -1,0 +1,31 @@
+.basket {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        color: $yellow-color;
+        font-size: 1.7rem;
+        margin-right: .8rem;
+    }
+
+    &__amount {
+        color: $yellow-color;
+        margin-left: .8rem;
+    }
+
+    &__clear-btn {
+        display: none;
+        background: none;
+        color: yellow;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 20px;
+        align-self: flex-start;
+        margin-left: .5rem;
+
+        &.active {
+            display: block;
+        }
+    }
+}

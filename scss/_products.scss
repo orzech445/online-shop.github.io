@@ -1,0 +1,109 @@
+.container__products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+
+    &__item {
+        max-width: 350px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+        cursor: pointer;
+        border-radius: 20px;
+        padding: 10px 15px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        & img {
+            width: 290px;
+        }
+
+        &__product-description {
+            color: $description-color;
+            font-size: 15px;
+            line-height: 22px;
+        }
+
+        &__product-price {
+            color: green;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            & .container__products__item__price-sale {
+                display: none;
+            }
+        }
+    }
+
+    &__item.on-sale {
+        & .container__products__item__price {
+            color: $black-color;
+            font-size: 13px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 110%;
+                height: 2px;
+                background-color: #111;
+                top: 35%;
+                left: -5px;
+                transform: rotate(-10deg);
+            }
+        }
+
+        & .container__products__item__price-sale {
+            display: block;
+        }
+    }
+
+    &__item {
+        &__product-add-to-basket-btn {
+            background: $black-color;
+            color: $white-color;
+            width: 60%;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                color: yellow;
+            }
+        }
+
+        &__product-item-sale-info {
+            display: none;
+            position: absolute;
+            right: -10px;
+            top: 0;
+            background-color: #111;
+            color: rgb(220, 220, 83);
+            border-radius: 5px;
+            padding: 5px 15px;
+            opacity: .8;
+        }
+    }
+
+
+    &__item.on-sale {
+        & .container__products__item__product-item-sale-info {
+            display: block;
+        }
+    }
+}

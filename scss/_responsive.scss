@@ -1,0 +1,62 @@
+@include media-sm {
+    header {
+        padding: .5rem;
+    }
+
+    .title__first {
+        display: none;
+    }
+
+    .title__second {
+        display: none;
+    }
+
+    .search {
+        margin-left: .5rem;
+
+        &__bar {
+            font-size: .8rem;
+            width: 200px;
+        }
+
+        &__label {
+            left: 176px;
+        }
+    }
+
+    .basket {
+        font-size: .9rem;
+    }
+}
+
+@include media-lg {
+    .container {
+        flex-direction: row;
+
+        &__categories {
+            border-right: 1px solid $black-color;
+            margin: 0px;
+            min-width: 350px;
+
+            &__title {
+                background-color: $yellow-color;
+                padding: 6px;
+            }
+
+            &__item {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &__item>button {
+                padding: 10px 50px;
+                border-radius: 5px;
+            }
+        }
+
+        &__products {
+            margin-left: 15px;
+            gap: 3rem;
+        }
+    }
+}

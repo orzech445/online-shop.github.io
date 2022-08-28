@@ -1,0 +1,10 @@
+.container__empty-state {
+    display: none;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+
+    &.active {
+        display: block;
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Media Amator | Sklep internetowy</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">
+            <span class="title__first">media</span>
+            <span class="title__second">amator</span>
+            <span class="title__third"><i class="fa fa-play"></i></span>
+        </h1>
+        <div class="search">
+            <input type="search" id="search-bar" class="search__bar" placeholder="Wyszukaj w sklepie..."
+                autocomplete="off" />
+            <label class="search__label" for="search-bar"><i class="fa fa-search"></i></label>
+        </div>
+        <div class="basket">
+            <span class="basket__icon"><i class="fa fa-shopping-cart"></i></span>
+            <h3 class="basket__amount">Koszyk</h3>
+            <button class="basket__clear-btn">x</button>
+        </div>
+    </header>
+    <main class="container">
+        <aside class="container__categories">
+            <h1 class="container__categories__title">Produkty</h1>
+            <section class="container__categories__item"></section>
+        </aside>
+        <section class="container__products"></section>
+        <p class="container__empty-state">Nie znaleziono zadnego produktu</p>
+    </main>
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

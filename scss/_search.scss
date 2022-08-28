@@ -1,0 +1,25 @@
+.search {
+    flex-grow: 1;
+    position: relative;
+    margin-left: 4rem;
+
+    &__bar {
+        font-size: 1.2rem;
+        width: 400px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        padding: .5rem;
+    }
+
+    &__label {
+        background-color: $yellow-color;
+        font-size: 1.2rem;
+        color: $black-color;
+        position: absolute;
+        left: 376px;
+        height: 100%;
+        border-radius: 0 10px 10px 0;
+        padding: .3rem;
+    }
+}
