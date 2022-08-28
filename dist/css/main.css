@@ -101,6 +101,7 @@
   justify-content: center;
   gap: 1.5rem;
   margin-top: 2rem;
+  margin-right: 0.3rem;
 }
 .container__products__item {
   max-width: 350px;
@@ -248,6 +249,7 @@
 body {
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 header {
