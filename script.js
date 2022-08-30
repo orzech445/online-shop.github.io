@@ -37,13 +37,13 @@ const renderProducts = (items) => {
             return (sum += item.price - (item.saleAmount ? item.saleAmount : 0));
         }, 0);
 
-        basketAmountEl.innerHTML = `${basketTotal} zł`;
+        basketAmountEl.innerHTML = `${basketTotal.toFixed(2)} zł`;
 
         basketTotal > 0 ?
             basketClearBtn.classList.add("active") :
             basketClearBtn.classList.remove("active");
 
-        console.log(basketTotal);
+        console.log(basketTotal.toFixed(2));
 
     }));
 };
